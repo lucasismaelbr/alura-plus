@@ -1,0 +1,160 @@
+* { margin: 0px; padding: 0px; }
+
+:root {
+    --branco-prim: #FFFFFF;
+    --cinza-sec: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --font-prim: 'Inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-prim);
+    font-family: var(--font-prim);
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+/* Primeira section */
+/* Usamos a tag <a> quando temos um redirect, a tag <button> quando temos uma função */
+.principal {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /* Esse alinhamento so funciona pois estamos fazendo o uso do "display:grid e o display:block" */
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 33% 50%;
+}
+
+.container-caixa {
+    margin: 0 5em;
+}
+
+.container-titulo {
+    text-align: start;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+/* Relógio sentido horário */
+.container-image {
+    margin: 1em 10em 2em 0;
+}
+
+.container-botao {
+    background-color: var(--botao-azul);
+    color: var(--branco-prim);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao-sec {
+    background-color: transparent;
+    border: 2px solid var(--branco-prim);
+}
+
+.container-aviso {
+    font-size: 12px;
+    color: var(--cinza-sec);
+}
+
+/* Segunda section */
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.imagem-sec {
+    width: 80%;
+}
+
+.descricao-titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-prim);
+    margin-bottom: 0.1em;   
+}
+
+.descricao-paragrafo {
+    color: var(--cinza-sec);
+}
+
+/* Terceira section */
+.botao-ter {
+    display: inline-block;
+    margin: 1em 0;
+}
+
+.container-descricao {
+    padding: 2em;
+}
+
+/* Quarta section */
+.dispositivos {
+    text-align: center;
+}
+
+.titulo-dispositivos {
+    color: var(--branco-prim);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.lista-dispositivos {
+    display: flex;
+    justify-content: space-around;
+    padding: 5em 15em;
+}
+
+.items-lista {
+    color: var(--branco-prim);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Footer */
+.rodape {
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.logo-rodape {
+    width: 102px;
+    margin-bottom: 3em;
+}
+
+.lista-rodape {
+    padding: 0 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.items-rodape a {
+    font-size: 16px;
+    color: var(--branco-prim);
+    text-decoration: none;
+    transition: all 350ms;
+}
+
+.items-rodape a:hover {
+    color: var(--botao-azul);
+}
+
+.rodape-paragrafo {
+    text-align: center;
+    font-size: 14px;
+    color: var(--cinza-sec);
+    margin: 2em;
+}
